@@ -12,6 +12,8 @@ interface Contato {
   telefone: string;
 }
 import output from './output.json';
+import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -22,6 +24,7 @@ import output from './output.json';
     CabecalhoComponent,
     SeparadorComponent,
     ContatoComponent,
+    FormsModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -30,8 +33,21 @@ export class AppComponent {
   alfabeto: string = 'abcdefghijklmnopqrstuvwyz';
   contatos: Contato[] = output;
 
-  filtrarContatoPorLetraInicial(letra: string): Contato[] {
+  filtroPorTexto: string = '';
+
+  filtrarContatoporTexto(): Contato[] {
+    if (!this.filtroPorTexto) {
+      return this.contatos;
+    }
     return this.contatos.filter((contato) => {
+      return contato.nome
+        .toLowerCase()
+        .includes(this.filtroPorTexto.toLowerCase());
+    });
+  }
+
+  filtrarContatoPorLetraInicia(letra: string): Contato[] {
+    return this.filtrarContatoporTexto().filter((contato) => {
       return contato.nome.toLowerCase().startsWith(letra);
     });
   }
