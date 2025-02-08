@@ -1,27 +1,58 @@
-# Agenda
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+## Indexa
+https://indexa-agenda.vercel.app/
 
-## Development server
+## Descrição
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Indexa** é uma aplicação web de agenda de contatos desenvolvida com Angular. O projeto faz parte do curso oferecido pela Alura e tem como objetivo ensinar os fundamentos do Angular e desenvolvimento web moderno.
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Adicionar, editar e remover contatos
+- Listar contatos existentes
+- Validação de formulários
+- Busca de contatos
 
-## Build
+## Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular
+- TypeScript
+- HTML
+- CSS
+- Angular CLI
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Demonstração
 
-## Running end-to-end tests
+Veja a demonstração do projeto no vídeo abaixo:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+https://github.com/user-attachments/assets/5094ed4b-5353-4676-8cc7-cb42fed90353
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Instalação
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/indexa.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd indexa
+   ```
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+## Como Usar
+
+1. Inicie a aplicação:
+   ```bash
+   ng serve
+   ```
+2. Abra seu navegador e acesse:
+   ```
+   http://localhost:4200
+   ```
+
+
